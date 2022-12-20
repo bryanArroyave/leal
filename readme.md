@@ -11,7 +11,7 @@
 
 5. Ejecutar el proyecto leal-store con el comando #3
 
-## Coma## Pasos para la ejecución
+## Comandos
 
 1. Ejecutar el docker que se encuentra en la raíz del proyecto comando #1 y comando #2
    (este levantará el rabbitMQ que se usará para la cmonunicación asíncrona entre cada uno de los backends)
