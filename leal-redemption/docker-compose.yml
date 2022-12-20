@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  leal-redemption:
+    container_name: leal-redemption
+
+    restart: always
+    build:
+      context: ./
+      target: LealRedemption
+    environment:
+      NODE_ENV: dev
+    ports:
+      - '${PORT}:3003'
+      - '9231:9229'
+    volumes:
+      - .:/usr/src/app
+    command: npm run dev

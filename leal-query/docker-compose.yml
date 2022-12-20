@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  leal-query:
+    container_name: leal-query
+    restart: always
+    build:
+      context: ./
+      target: lealQuery
+    environment:
+      NODE_ENV: dev
+    ports:
+      - '${PORT}:3001'
+      - '9231:9229'
+    volumes:
+      - .:/usr/src/app
+    command: npm run dev

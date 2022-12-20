@@ -1,0 +1,28 @@
+<!-- <ng-container *ngIf="(this.clientNorFound$ | async) as clientError">
+
+    {{this.clientId}} No encontrado {{clientError | json}}
+</ng-container> -->
+
+<ng-container *ngIf="this.client">
+
+    <div class="leal-client-info">
+        <div class="leal-title">Código</div>
+        <div class="leal-sub-title">{{client.uuid}}</div>
+    </div>
+    <div class="leal-client-info">
+        <div class="leal-title">Nombre</div>
+        <div class="leal-sub-title">{{client.name}}</div>
+    </div>
+    <div class="leal-client-info">
+        <div class="leal-title">Email</div>
+        <div class="leal-sub-title">{{client.email}}</div>
+    </div>
+    <div class="leal-client-info">
+        <div class="leal-title">Puntos</div>
+        <div class="leal-sub-title">{{client.points}}</div>
+    </div>
+
+    <div class="leal-buttons">
+        <button class="leal-btn leal-btn--outline" [routerLink]="['/client']">Regresar</button>
+    </div>
+</ng-container>

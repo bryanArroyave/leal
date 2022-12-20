@@ -1,0 +1,17 @@
+<ng-container *ngIf="(this.products$ | async) as products">
+
+    <ng-container *ngFor="let product of products">
+
+        <div class="store-product">
+
+            <div class="leal-title">{{product.name}}</div>
+            <div class="leal-sub-title">{{this.formatValue(product.value)}}</div>
+            <div class="store-buttons">
+                <button class="leal-btn leal-btn--primary" (click)="this.buy(product.uuid)">Comprar</button>
+            </div>
+        </div>
+
+    </ng-container>
+
+
+</ng-container>

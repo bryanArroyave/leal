@@ -1,0 +1,18 @@
+<ng-container *ngIf="(this.clients$ | async) as clients">
+
+    <ng-container *ngFor="let client of clients">
+
+        <div class="store-client">
+
+            <div class="leal-sub-title">{{client.name}}</div>
+
+            <div class="store-buttons">
+                <button class="leal-btn leal-btn--primary" [routerLink]="[client.uuid, 'buy' ]">Comprar</button>
+                <button class="leal-btn leal-btn--outline" [routerLink]="[client.uuid, 'exchange' ]">Redimir</button>
+            </div>
+        </div>
+
+    </ng-container>
+
+
+</ng-container>

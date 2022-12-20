@@ -1,0 +1,148 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root {
+    --primary: #ffd600;
+    --secondary: #2b2b2b;
+    --tertiary: #e1e6e6;
+  
+    --primary-color: rgb(24, 23, 23);
+    --secondary-color: rgb(78, 78, 78);
+  
+    --success-color: #00832d;
+    --error-color: #c20f0f;
+  
+    --tooltip-bgcolor: #60aaf3e7;
+    --tooltip-color: #fff;
+  
+    --font-family: "Roboto", sans-serif;
+
+  }
+  
+
+  *{box-sizing: border-box;}
+.leal-btn {
+    padding: 10px 20px;
+    border-radius: 7px;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    box-shadow: 0 0 2px #00000099;
+    color: #000;
+    transition: filter 0.3s;
+    cursor: pointer;
+    width: fit-content;
+    display: flex;
+    gap: 0.3rem;
+  }
+  
+  .leal-btn:hover {
+    filter: brightness(90%);
+  }
+  
+  .leal-btn.leal-btn--primary {
+    color: var(--primary-color);
+    background: var(--primary);
+  }
+  
+  .leal-btn.leal-btn--secondary {
+    color: var(--secondary-color);
+    background: var(--secondary);
+  }
+  
+  .leal-btn.leal-btn--outline,
+  .leal-btn.leal-btn--primary.leal-btn--outline {
+    background: #fff;
+    color: var(--primary);
+  }
+  
+  .leal-btn.leal-btn--secondary.leal-btn--outline {
+    color: var(--secondary);
+  }
+  
+  .leal-btn:active {
+    transform: scale(1.01);
+  }
+  
+  .leal-btn:disabled {
+    color: var(--primary-color);
+    filter: opacity(0.6);
+    cursor: default;
+  }
+  
+  .leal-btn.leal-btn--secondary:disabled {
+    color: var(--secondary-color);
+    filter: opacity(0.6);
+    cursor: default;
+  }
+  
+
+  .leal-title {
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .leal-sub-title {
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .leal-text {
+    color: var(--tertiary);
+    font-size: 21px;
+    font-weight: 300;
+  }
+  
+  .leal-link {
+    color: var(--primary);
+    font-weight: 700;
+  }
+  
+  .leal-link--bold {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary);
+    text-shadow: 0 0 2px #00000099;
+  }
+  
+  /* Colors */
+  
+  .blue {
+    color: #008a9f !important;
+  }
+  
+  .black {
+    color: #000 !important;
+  }
+  
+  .red {
+    color: #c20f0f !important;
+  }
+  
+  /* Text align */
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-end {
+    text-align: end;
+  }
+  
+  .text-start {
+    text-align: start;
+  }
+
+  .store-buttons{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    gap :1rem;
+  }
+  

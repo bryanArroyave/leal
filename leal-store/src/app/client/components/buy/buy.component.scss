@@ -1,0 +1,13 @@
+:host{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+
+.leal-product-container{
+    width: min(calc(100% - 4rem), 400px);
+    height: 100%;
+    overflow: hidden;
+}

@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  leal-accumulate:
+    container_name: leal-accumulate
+
+    restart: always
+    build:
+      context: ./
+      target: lealAccumulate
+    environment:
+      NODE_ENV: dev
+    ports:
+      - '${PORT}:3002'
+      - '9231:9229'
+    volumes:
+      - .:/usr/src/app
+    command: npm run dev

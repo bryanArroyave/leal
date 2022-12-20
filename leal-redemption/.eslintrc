@@ -1,0 +1,35 @@
+{
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
+  "parser": "babel-eslint",
+  "extends": "airbnb-base",
+  "rules": {
+    "strict": 0,
+    "semi": ["error", "always"],
+    "comma-dangle": ["error", "never"],
+    "no-underscore-dangle": "off",
+    "class-methods-use-this": "off",
+    "object-curly-newline": ["error", { "multiline": true }],
+    "global-require": "off",
+    "arrow-parens": ["error", "as-needed"],
+    "no-param-reassign": ["error", { "props": false }],
+    "no-multi-assign": "off",
+    "no-plusplus": ["off", { "allowForLoopAfterthoughts": true }],
+    "radix": ["error", "as-needed"],
+    "linebreak-style": 0,
+    "indent": 1,
+    "no-multiple-empty-lines": ["error", { "max": 2 }],
+    "max-len": ["error", 600, { "ignoreComments": true, "ignoreStrings": true }],
+    "max-params": ["error", 4],
+    "max-depth": ["error", 4]
+    // "max-lines-per-function": [1, {"max": 25, "skipComments": true,  "skipBlankLines": true, "IIFEs": true }]
+  },
+  "globals": {
+    "use": true
+  }
+}

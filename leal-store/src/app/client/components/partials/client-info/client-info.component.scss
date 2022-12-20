@@ -1,0 +1,23 @@
+:host, .leal-client-info{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+:host{
+    padding: 1rem;
+    background-color: var(--primary);
+    gap: 1rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    min-width: 400px;
+    flex-direction: column;
+}
+
+.leal-client-info{
+    gap: 0.5rem;
+    justify-content: space-between;
+    width: 100%;
+}

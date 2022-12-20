@@ -1,0 +1,19 @@
+<ng-container *ngIf="(this.gifts$ | async) as gifts">
+
+    <ng-container *ngFor="let gift of gifts">
+
+        <div class="store-gift">
+
+            <div class="leal-title">{{gift.name}}</div>
+            <div class="leal-sub-title">{{gift.points}}</div>
+            <div class="store-buttons">
+                <button class="leal-btn leal-btn--primary" (click)="this.exchange(gift.uuid)">
+                    Redimir
+                </button>
+            </div>
+        </div>
+
+    </ng-container>
+
+
+</ng-container>

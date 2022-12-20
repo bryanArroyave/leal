@@ -1,0 +1,11 @@
+
+package-lock.json
+tmp/*
+logs/*
+node_modules/*
+mongo-volume/*
+dist/*
+.env
+
+src/**/*mock.json
+coverage/*
